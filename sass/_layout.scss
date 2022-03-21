@@ -1,6 +1,6 @@
 .main {
 	margin-top: 2rem;
-	max-width: 300px;
+	max-width: 80%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -25,8 +25,8 @@
 }
 
 .content {
-	display: flex;
-	flex-wrap: wrap;
+	// display: flex;
+	// flex-wrap: wrap;
 	margin-bottom: 4rem;
 }
 
@@ -41,7 +41,7 @@
 
 .title {
 	font-family: "Poppins", sans-serif;
-	font-size: 1.5rem;
+	font-size: x-large;
 	margin-bottom: 1rem;
 }
 
@@ -50,6 +50,7 @@
 	color: gainsboro;
 	margin-bottom: 1.5rem;
 	line-height: 1.5;
+	font-size: medium;
 }
 
 .btn {
@@ -73,36 +74,36 @@
 		background-color: var(--Soft_Magenta);
 	}
 }
-//#region Footer
 
-footer {
-	margin-bottom: 1rem;
+.icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.7rem;
+  margin-top: 4rem;
+	margin-bottom: 2rem;
 
-	.icons {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 0.7rem;
-		margin-bottom: 2rem;
+	a {
+		width: 28px;
+		height: 28px;
+		border: 1px solid white;
+		border-radius: 50%;
+		color: white;
 
-		a {
-			width: 28px;
-			height: 28px;
-			border: 1px solid white;
-			border-radius: 50%;
-			color: white;
+		&:hover {
+			border-color: var(--Soft_Magenta);
+			color: var(--Soft_Magenta);
+		}
 
-			&:hover {
-				border-color: var(--Soft_Magenta);
-				color: var(--Soft_Magenta);
-			}
-
-			i {
-				font-size: 12px;
-			}
+		i {
+			font-size: 12px;
 		}
 	}
+}
 
+//#region Footer
+footer {
+	margin-bottom: 1rem;
 	.attribution {
 		font-size: 11px;
 		text-align: center;
@@ -112,3 +113,62 @@ footer {
 	}
 }
 //#endregion
+
+
+
+@media screen and (min-width: 768px) {
+
+	body {
+		background: url('../images/bg-desktop.svg') no-repeat, var(--Violet);
+	}
+
+	.header{
+		.img {
+		max-width: 220px;
+		}
+		}
+	
+
+	.main {
+		margin-top: 0;
+		max-width: 90%;
+	}
+
+	.content {
+		max-width: 500px;
+		text-align: left;
+		margin: 0;
+	}
+	
+  .section {
+    display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+
+  }
+
+	.title {
+		font-size: xx-large;
+
+		@media screen and (min-width: 1024px) {
+			font-size: 2.5rem;
+		
+			
+		}
+	}
+
+	.paragraph {
+		font-size: 1.1rem;
+	}
+
+	.btn {
+		font-size: 1rem;
+		padding: 1rem;
+	}
+
+	.icons {
+		justify-content: flex-end;
+		text-align: center;
+	}
+}

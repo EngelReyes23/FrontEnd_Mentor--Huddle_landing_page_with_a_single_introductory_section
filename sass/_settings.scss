@@ -20,17 +20,18 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-  user-select: none;
+	user-select: none;
 }
 
 body {
 	color: white;
 	font-family: "Open Sans", sans-serif;
-  // min-width: 100vw;
-  min-height: 100vh;
+	// min-width: 100vw;
+	min-height: 100vh;
 	background: url("../images/bg-mobile.svg") no-repeat, var(--Violet);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
